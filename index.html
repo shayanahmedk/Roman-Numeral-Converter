@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+    <main class="text-center">
+        <h1 id="title" class="text-3xl font-bold underline mb-8">Roman Numeral Converter</h1>
+        <form id="form" class="form">
+            <fieldset class="mb-4">
+                <label for="number" class="block mb-2">Enter a number:</label>
+                <div class="flex justify-center">
+                    <input type="number" id="number" required
+                        class="block w-48 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                </div>
+                <button type="button" id="convert-btn"
+                    class="mt-2 px-4 py-2 bg-blue-500 text-white font-bold rounded-md transition duration-300 ease-in-out hover:bg-blue-700">
+                    Convert
+                </button>
+            </fieldset>
+        </form>
+        <div id="output" class="output hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
